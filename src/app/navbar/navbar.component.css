@@ -1,13 +1,24 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 ul {
   list-style-type: none;
-  margin: 0;
+  margin-left: 200px;
+  margin-right: 200px;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #1c1c1c;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
 }
 
 li {
   float: left;
+}
+
+i {
+  padding-right: 20px;
+  font-size: 20px;
 }
 
 li a {
@@ -20,8 +31,7 @@ li a {
 
 li a:hover:not(.active) {
   background-color: #111;
+  border-radius: 5px;
 }
 
-.active {
-  background-color: #4CAF50;
-}
+
