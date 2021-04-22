@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {TransaktionComponent} from "./transaktion/transaktion.component";
+import {AuszahlenComponent} from "./auszahlen/auszahlen.component";
+import {EinzahlenComponent} from "./einzahlen/einzahlen.component";
 
 
 const routes: Routes = [
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path: 'transaktion',
     component: TransaktionComponent
+  },
+  {
+    path: 'überweisen',
+    component: AuszahlenComponent
+  },
+  {
+    path: 'einzahlen',
+    component: EinzahlenComponent
   }
 ];
 
