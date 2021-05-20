@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
+i {
+  color: #fff;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -140,7 +144,7 @@ input[type=text], input[type=password], input[type=password], input[type=number]
 input[type=text]:focus, input[type=password]:focus {
   background-color: #fff;
   border-bottom: 2px solid #00a9bf;
-  color: #1c1c1c;
+
 }
 
 input[type=text]::placeholder, input[type=password]::placeholder {

@@ -11,7 +11,8 @@ import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TransaktionComponent } from './transaktion/transaktion.component';
 import { CardComponent } from './card/card.component';
-import { MeinkontoComponent } from './meinkonto/meinkonto.component';
+import { EinzahlenComponent } from './einzahlen/einzahlen.component';
+import { AuszahlenComponent } from './auszahlen/auszahlen.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MeinkontoComponent } from './meinkonto/meinkonto.component';
     RegisterComponent,
     TransaktionComponent,
     CardComponent,
-    MeinkontoComponent
+    EinzahlenComponent,
+    AuszahlenComponent
   ],
   imports: [
     BrowserModule,
