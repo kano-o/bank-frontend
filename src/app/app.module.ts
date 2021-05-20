@@ -13,6 +13,7 @@ import { TransaktionComponent } from './transaktion/transaktion.component';
 import { CardComponent } from './card/card.component';
 import { EinzahlenComponent } from './einzahlen/einzahlen.component';
 import { AuszahlenComponent } from './auszahlen/auszahlen.component';
+import { MeinkontoComponent } from './meinkonto/meinkonto.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AuszahlenComponent } from './auszahlen/auszahlen.component';
     TransaktionComponent,
     CardComponent,
     EinzahlenComponent,
-    AuszahlenComponent
+    AuszahlenComponent,
+    MeinkontoComponent
   ],
   imports: [
     BrowserModule,
