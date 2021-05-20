@@ -5,6 +5,7 @@ import {RegisterComponent} from "./register/register.component";
 import {TransaktionComponent} from "./transaktion/transaktion.component";
 import {AuszahlenComponent} from "./auszahlen/auszahlen.component";
 import {EinzahlenComponent} from "./einzahlen/einzahlen.component";
+import {MeinkontoComponent} from "./meinkonto/meinkonto.component";
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'einzahlen',
     component: EinzahlenComponent
+  },
+  {
+    path: 'konto',
+    component: MeinkontoComponent
   }
 ];
 
