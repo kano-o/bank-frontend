@@ -14,6 +14,7 @@ import { CardComponent } from './card/card.component';
 import { EinzahlenComponent } from './einzahlen/einzahlen.component';
 import { AuszahlenComponent } from './auszahlen/auszahlen.component';
 import { MeinkontoComponent } from './meinkonto/meinkonto.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MeinkontoComponent } from './meinkonto/meinkonto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
