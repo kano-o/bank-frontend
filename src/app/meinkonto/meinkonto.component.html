@@ -4,13 +4,13 @@
   <div class="grid-container">
     <div class="name">
       <h1 class="header">Mein Konto</h1>
-      <h2 class="names">Hallo xyz</h2></div>
+      <h2 class="names">Hallo {{display.userName | json}}</h2></div>
     <div class="kontostands"><h2 class="kontostand">Aktueller Kontostand:{{display.userId | json}}€</h2></div>
 
     <div class="content">
-      <h2 class="Kontonummer">Kontonummer: 5435464</h2>
-      <h2 class="Email">Emailadresse: xyz@email.com</h2>
-      <h2 class="tele">Telefonnummer: 0123456789</h2>
+      <h2 class="Kontonummer">Kontonummer: {{display.userId | json}}</h2>
+      <h2 class="Email">Emailadresse: {{display.userName | json}}</h2>
+      <h2 class="tele">Telefonnummer: {{display.userId | json}}</h2>
     </div>
     <div class="nothing"></div>
   </div>
