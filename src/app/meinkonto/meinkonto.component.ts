@@ -12,9 +12,12 @@ export class MeinkontoComponent implements OnInit {
   }
 display: any;
 
-  function (){
+  get(){
     this.display = "test";
-    this.http.get("https://jsonplaceholder.typicode.com/todos/1").subscribe(
+
+    let header = new HttpHeaders();
+    header = header.append("Token","TGoRqMP2MxAEKaNl6rA5JX76AxP-HcG8hvmNDCdKasM=");
+    this.http.get("https://backend.yab-banking.tech/account/profile",{headers:header}).subscribe(
       response => {
         console.log(response);
         this.display = response;
