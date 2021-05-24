@@ -15,6 +15,7 @@ import { EinzahlenComponent } from './einzahlen/einzahlen.component';
 import { AuszahlenComponent } from './auszahlen/auszahlen.component';
 import { MeinkontoComponent } from './meinkonto/meinkonto.component';
 import {HttpClientModule} from '@angular/common/http';
+import {CookieModule, CookieService} from 'ngx-cookie';
 
 @NgModule({
   declarations: [
@@ -32,9 +33,10 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    CookieService.forRoot()
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

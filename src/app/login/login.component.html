@@ -15,11 +15,12 @@
 
     <!-- Login Form -->
     <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Email">
-      <input type="password" id="password" class="fadeIn third" name="login" placeholder="Passwort">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
 
+      <input #emailAddress type="text" id="login" class="fadeIn second" name="login" placeholder="Email">
+      <input #password type="password" id="password" class="fadeIn third" name="login" placeholder="Passwort">
+
+    </form>
+    <input type="submit" class="fadeIn fourth" value="Log In"(click)="post(emailAddress.value, password.value)">
     <!-- Passwort vergessen -->
     <div id="formFooter">
       <a class="underlineHover">Passwort vergessen?</a>
