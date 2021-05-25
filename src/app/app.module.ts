@@ -34,9 +34,11 @@ import {CookieModule, CookieService} from 'ngx-cookie';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    CookieService.forRoot()
+    CookieModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [CookieService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
