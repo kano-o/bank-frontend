@@ -15,7 +15,7 @@ export class MeinkontoComponent implements OnInit {
   display: any;
 
   get() {
-    this.display = "test";
+    this.display = 'test';
 
     let header = new HttpHeaders();
     header = header.append("Token", this.cookieService.get("token"));
@@ -28,6 +28,10 @@ export class MeinkontoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(window.location.pathname);
+    if (this.cookieService.get("token") == undefined && window.location.pathname !== "/login") { //potential fix
+      window.location.href = "/login";
+    }
     this.display = "leer";
     this.get();
   }

@@ -29,11 +29,14 @@ export class LoginComponent implements OnInit {
       (response) => {
         console.log(response);
         this.cookieService.put("token", response);
+        window.location.href = ""
       }
     );
   }
 
   ngOnInit(): void {
+
   }
+
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {CookieService} from "ngx-cookie";
 
@@ -9,7 +9,8 @@ import {CookieService} from "ngx-cookie";
 })
 export class TransaktionComponent implements OnInit {
 
-  constructor(private http: HttpClient, private cookieService: CookieService) { }
+  constructor(private http: HttpClient, private cookieService: CookieService) {
+  }
 
   packet = {
     balance: ""
@@ -31,6 +32,11 @@ export class TransaktionComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(window.location.pathname);
+    if (this.cookieService.get("token") == undefined && window.location.pathname !== "/login") { //potential fix
+      window.location.href = "/login";
+
+    }
     this.display = "leer";
     this.get();
   }
