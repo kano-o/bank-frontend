@@ -16,12 +16,12 @@
 
     <!-- Login Form -->
     <form>
-      <input type="text" id="vorname" class="fadeIn second" name="vorname" placeholder="Vorname">
-      <input type="text" id="nachname" class="fadeIn second" name="nachname" placeholder="Nachname">
-      <input type="text" id="email" class="fadeIn second" name="email" placeholder="Email">
-      <input type="text" id="tele" class="fadeIn second" name="tele" placeholder="Telefonnummer">
-      <input type="password" id="password" class="fadeIn third" name="login" placeholder="Passwort">
-      <input type="submit" class="fadeIn fourth" value="Log In">
+      <input type="text" id="vorname" class="fadeIn second" #firstName  placeholder="Vorname">
+      <input type="text" id="nachname" class="fadeIn second" #lastName placeholder="Nachname">
+      <input type="text" id="email" class="fadeIn second" #emailAddress  placeholder="Email">
+      <input type="text" id="tele" class="fadeIn second" #phoneNumber placeholder="Telefonnummer">
+      <input type="password" id="password" class="fadeIn third" #password  placeholder="Passwort">
+      <input type="submit" class="fadeIn fourth" value="Register" (click)="postReg(firstName.value, lastName.value, emailAddress.value, phoneNumber.value, password.value)">
     </form>
 
     <!-- Passwort vergessen -->
