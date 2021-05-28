@@ -3,8 +3,8 @@
 <div class="container">
   <div class="wrapper-1">
   <form>
-    <input type="password" id="password" placeholder="Passwort">
-    <input type="submit">
+    <input #betrag type="betrag"  placeholder="Auszahlungsbetrag" >
+    <input (click)="auszahlen(betrag.value)" type="submita" placeholder ="Auszahlen">
   </form>
   </div>
 </div>

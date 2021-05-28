@@ -1,1 +1,13 @@
-<p>einzahlen works!</p>
+
+<div class="grid-container">
+  <div class="title">
+    <h1>Einzahlen</h1>
+  </div>
+  <div class="content">
+    <form>
+      <input #betrag type="betrag"  placeholder="Einzahlungsbetrag" >
+      <input (click)="einzahlen(betrag.value)" type="submita" placeholder="Einzahlen">
+    </form>
+  </div>
+</div>
+

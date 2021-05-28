@@ -33,9 +33,10 @@ h1 {
   min-height: 80%;
 }
 
-input[type=button], input[type=submit], input[type=reset]  {
+input[type=button], input[type=submita], input[type=reset]  {
   cursor: pointer;
   background-color: #00a9bf;
+  position: center;
   border: none;
   color: white;
   padding: 20px 80px;
@@ -57,11 +58,11 @@ input[type=button], input[type=submit], input[type=reset]  {
   transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+input[type=button]:hover, input[type=submita]:hover, input[type=reset]:hover  {
   background-color: #39ace7;
 }
 
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+input[type=button]:active, input[type=submita]:active, input[type=reset]:active  {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
@@ -69,7 +70,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   transform: scale(0.95);
 }
 
-input[type=text], input[type=password], input[type=password]  {
+input[type=betrag], input[type=password], input[type=password]  {
 
   background-color: rgba(84, 84, 84, 0.44);
   border: none;
@@ -92,12 +93,12 @@ input[type=text], input[type=password], input[type=password]  {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus {
+input[type=betrag]:focus {
   background-color: #fff;
   border-bottom: 2px solid #00a9bf;
   color: #1c1c1c;
 }
 
-input[type=text]::placeholder {
+input[type=betrag]::placeholder {
   color: #cccccc;
 }

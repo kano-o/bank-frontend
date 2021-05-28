@@ -33,11 +33,8 @@ const routes: Routes = [
   {
     path: 'konto',
     component: MeinkontoComponent
-  },
-  {
-    path: 'überweisen',
-    component: UeberweisenComponent
   }
+
 
 ];
 

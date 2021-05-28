@@ -20,7 +20,6 @@ export class TransaktionComponent implements OnInit {
 
   get() {
     this.display = "test";
-
     let header = new HttpHeaders();
     header = header.append("Token", this.cookieService.get("token"));
     this.http.get("https://backend.yab-banking.tech/account/profile", {headers: header}).subscribe(
