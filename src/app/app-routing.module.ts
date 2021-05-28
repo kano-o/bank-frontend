@@ -6,6 +6,7 @@ import {TransaktionComponent} from "./transaktion/transaktion.component";
 import {AuszahlenComponent} from "./auszahlen/auszahlen.component";
 import {EinzahlenComponent} from "./einzahlen/einzahlen.component";
 import {MeinkontoComponent} from "./meinkonto/meinkonto.component";
+import {UeberweisenComponent} from "./ueberweisen/ueberweisen.component";
 
 
 const routes: Routes = [
@@ -22,7 +23,7 @@ const routes: Routes = [
     component: TransaktionComponent
   },
   {
-    path: 'überweisen',
+    path: 'auszahlen',
     component: AuszahlenComponent
   },
   {
@@ -32,7 +33,12 @@ const routes: Routes = [
   {
     path: 'konto',
     component: MeinkontoComponent
+  },
+  {
+    path: 'überweisen',
+    component: UeberweisenComponent
   }
+
 ];
 
 @NgModule({

@@ -14,8 +14,10 @@ import { CardComponent } from './card/card.component';
 import { EinzahlenComponent } from './einzahlen/einzahlen.component';
 import { AuszahlenComponent } from './auszahlen/auszahlen.component';
 import { MeinkontoComponent } from './meinkonto/meinkonto.component';
+import { UeberweisenComponent } from './ueberweisen/ueberweisen.component';
 import {HttpClientModule} from '@angular/common/http';
 import {CookieModule, CookieService} from 'ngx-cookie';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import {CookieModule, CookieService} from 'ngx-cookie';
     CardComponent,
     EinzahlenComponent,
     AuszahlenComponent,
-    MeinkontoComponent
+    MeinkontoComponent,
+    UeberweisenComponent
   ],
   imports: [
     BrowserModule,
