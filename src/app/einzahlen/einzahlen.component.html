@@ -1,12 +1,11 @@
 
-<div class="grid-container">
-  <div class="title">
+<div class="wrapper">
     <h1>Einzahlen</h1>
-  </div>
-  <div class="content">
+    <div class="container">
+      <div class="wrapper-1">
     <form>
       <input #betrag type="betrag"  placeholder="Einzahlungsbetrag" >
-      <input (click)="einzahlen(betrag.value)" type="submita" placeholder="Einzahlen">
+      <input type="submit" (click)="einzahlen(betrag.value)" type="submita" placeholder="Einzahlen">
     </form>
   </div>
 </div>
