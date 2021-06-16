@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.title{
+  font-size: 18pt;
+  font-weight: bold;
+  padding-left: 20%;
+  margin-top: 6%;
+}
+
+.subTitle{
+  font-size: 14pt;
+  padding-left: 20%;
+  margin-top: -5%;
+
+}
+
+.trans{
+  font-size: 14pt;
+  margin-top: 13%;
+  margin-left: 50%;
+}
+
+p {
+  font-family:'Roboto', sans-serif;
+  color: white;
+}
+
+
+.card {
+  border-radius: 10px;
+  height: 10vh;
+  width: 60%;
+  background-color: #161616;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.30);
+  margin:auto;
+  margin-bottom: 30px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "left-up middle middle right"
+    "left-middle middle middle right"
+    "left-down middle middle right";
+}
+
+.left-up { grid-area: left-up; }
+
+.left-middle { grid-area: left-middle; }
+
+.left-down { grid-area: left-down; }
+
+.middle { grid-area: middle; }
+
+.right { grid-area: right; }
+
+
+
+
